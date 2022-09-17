@@ -1,0 +1,68 @@
+body{
+    margin: 0;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    overflow-y: hidden;
+}
+
+.noche{
+    height: 80vh;
+    width: 70vw;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 5rem auto;
+    background: url(/ejemplos/animacion/assets/Img_1.png);
+    background-size: cover;
+    position: relative;
+    box-shadow: 1px 2px 60px rgba(0, 0, 0, 4);
+    overflow-x: hidden;
+}
+
+.sp{   
+     height: 140px;
+    width: 500%;
+    background: url(/ejemplos/animacion/assets/Img_02.png);
+    display: block;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    background-repeat: repeat-x;
+
+}
+
+.movimiento{
+    animation: movimiento 6s linear infinite;
+
+}
+
+.terreno{
+    animation: terreno 1s linear infinite;
+
+}
+
+.auto{
+    position: absolute;
+    bottom: 5.6%;
+    left: 24%;
+}
+
+h2{
+    color: #30DBF0;
+    font-size: -100px;
+    font-family: 'Combo';
+   
+
+}
+
+@keyframes movimiento {
+    100%{transform: translateX(-2950px);}
+}
+
+@keyframes terreno {
+    100%{
+        transform: translateY(-1px);
+    }50%{
+        transform: translateY(2px);
+    }0%{
+        transform: translateY(-1px);
+    }
+}
